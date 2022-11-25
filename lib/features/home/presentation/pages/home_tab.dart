@@ -83,30 +83,35 @@ class _HomeTabState extends State<HomeTab> {
                 ),
               ),
               const Spacer(),
-              Padding(
-                padding: const EdgeInsets.only(top: 18 , right: 18),
-                child: SvgPicture.asset(
-                  'assets/svg/filter.svg' ,
-                  width: 24,
-                  height: 24,
-                  color: Colors.black87,
-                )
-              ),
-              Padding(
-                  padding: const EdgeInsets.only(top: 18 , right: 18),
-                  child: SvgPicture.asset(
-                    'assets/svg/bolt.svg' ,
-                    width: 26,
-                    height: 26,
-                    color: Colors.black87,
-                  )
-              ),
+              // Padding(
+              //   padding: const EdgeInsets.only(top: 18 , right: 18),
+              //   child: SvgPicture.asset(
+              //     'assets/svg/filter.svg' ,
+              //     width: 24,
+              //     height: 24,
+              //     color: Colors.black87,
+              //   )
+              // ),
+              // Padding(
+              //     padding: const EdgeInsets.only(top: 18 , right: 18),
+              //     child: SvgPicture.asset(
+              //       'assets/svg/bolt.svg' ,
+              //       width: 26,
+              //       height: 26,
+              //       color: Colors.black87,
+              //     )
+              // ),
 
             ],
           ),
           Text(
               users[1].birthDate.toString()
           ),
+          Text(
+              users[1].firstName + ' ' + users[1].lastName.trimLeft()
+          ),
+
+
         ],
       ),
     );
